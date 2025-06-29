@@ -1,1 +1,15 @@
-# button-clicker
+<!DOCTYPE html>
+<html>
+  <head><title>Clicker</title></head>
+  <body>
+    <h1>Click the Button!</h1>
+    <p id="counter">Count: 0</p>
+    <button onclick="countClick()">Click Me</button>
+    <script src="script.js"></script>
+  </body>
+  let count = 0;
+function countClick() {
+  count++;
+  document.getElementById('counter').innerText = "Count: " + count;
+}
+</html>
